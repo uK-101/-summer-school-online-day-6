@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.801);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.outer-container {
+  background-color: rgba(98, 204, 222, 0.775);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 1600;
+}
+
+.todo-input {
+  position: relative;
+  width: 300px;
+  left: 30px;
+  height: 30px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 14px;
+}
+
+
+.todo-button {
+  height: 40px;
+  padding:  0 16px;
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  margin-left: 50px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.todo-button:hover {
+  background-color: #4cae4c;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+  left: 8px;
+  margin-top: 8px;
+}
+
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #dfe794;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.task-text {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #333;
+  word-wrap: break-word;
+  word-break: break-word;
+
+}
+
+.task-text.completed {
+  color: #272525;
+  font-weight: bolder;
+}
+
+.task-checkbox {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  accent-color: green;
+}
+
+.task-delete {
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.task-delete:hover {
+  background-color: #c9302c;
+}
+
